@@ -1,9 +1,9 @@
 With the current schema, a codeq consists of:
-- :codeq/file
-- :codeq/loc
-- :codeq/parent
-- :codeq/code
-- attr (:clj/def, :clj/use, ...)
+- `:codeq/file`
+- `:codeq/loc`
+- `:codeq/parent`
+- `:codeq/code`
+- attr (`:clj/def`, `:clj/use`, ...)
 - deftype (def, defn, ...)
 
 A sample codeq:

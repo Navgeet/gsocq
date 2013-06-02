@@ -6,7 +6,7 @@ The analysis phase can be divided into two stages -
 
 ## Commiting ast
 
-The full ast should be dumped in the db under a :codeq/ast
+The full ast should be dumped in the db under a `:codeq/ast`
 node. See [AST.md][1] for proposed schema modifications.
 
 ## Analysis
@@ -16,9 +16,9 @@ macro invocations like defn, let and defmacro. Since we
 are primarily harvesting ast, we have to resort to
 matching an ast pattern for making sense of a macro.
 
-I propose an umbrella node (say :codeq/infer) to contain
+I propose an umbrella node (say `:codeq/infer`) to contain
 all of analysis results. This can be furthur divided into
-nodes like :infer/core, :infer/type etc to contain info
+nodes like `:infer/core`, `:infer/type` etc to contain info
 mined by various plugins, with core for things like macro
 analysis and more.
 
